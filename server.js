@@ -34,17 +34,20 @@ mongoose.connection.on('error', (err) => {
 /**
  * Controllers (route handlers).
  */
-// const ssr = require('./controllers/ssr');
+const todo = require('./controllers/todo');
 
 /**
  * app routes.
  */
 const router = new Router()
+router.get('/addtodo', todo.addTodo);
+router.get('/deltodo', todo.delTodo);
+router.get('/searchtodo', todo.searchTodo);
+
 router.get('*', async ctx => {
     await handle(ctx.req, ctx.res)
     ctx.respond = false
 })
-// router.get('*', ssr.Handle)
 
 /**
  * Create Koa server.
