@@ -12,7 +12,6 @@ exports.addTodo = (ctx, next) => {
 }
 
 exports.delTodo = (ctx, next) => {
-    console.log(ctx);
     todoModel.delTodo({todoContent: 'hahahha'});
 }
 
