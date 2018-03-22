@@ -34,7 +34,7 @@ mongoose.connection.on('error', (err) => {
 /**
  * Controllers (route handlers).
  */
-const todo = require('./controllers/todo');
+const todo = require('./server/controllers/todo');
 
 /**
  * app routes.
@@ -42,7 +42,8 @@ const todo = require('./controllers/todo');
 const router = new Router()
 router.get('/addtodo', todo.addTodo);
 router.get('/deltodo', todo.delTodo);
-router.get('/searchtodo', todo.searchTodo);
+router.get('/changetodo', todo.changeTodo);
+router.get('/gettodo', todo.getTodo);
 
 router.get('*', async ctx => {
     await handle(ctx.req, ctx.res)
