@@ -32,6 +32,8 @@
 import React from 'react'
 import Head from 'next/head'
 import Todos from './components/Todos'
+import Home from './components/Home'
+import stylesheet from './index.less'
 
 export default class App extends React.Component {
     constructor(props) {
@@ -47,15 +49,10 @@ export default class App extends React.Component {
                         <title>Todos</title>
                         <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
                     </Head>
-                    <h1>Todos</h1>
-                    <Todos/>
+                    <Home/>
+                    {/*<Todos/>*/}
                 </section>
-                <style jsx global>{`
-                    *{
-                        margin:0 auto;
-                        padding: 0 0;
-                    }
-                `}</style>
+                <style jsx global>{stylesheet}</style>
             </div>
         )
     }

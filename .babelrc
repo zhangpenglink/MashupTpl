@@ -1,0 +1,24 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    "transform-decorators-legacy",
+    [
+      "module-resolver", {
+      "root": ["."],
+      "alias": {
+        "styles": "./styles"
+      },
+      "cwd": "babelrc"
+    }],
+    [
+      "import",
+      [
+        {
+          "libraryName": "antd"
+        }, {
+          "libraryName": "antd-mobile"
+        }
+      ]
+    ]
+  ]
+}
