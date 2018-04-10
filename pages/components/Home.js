@@ -72,24 +72,6 @@ export default class Home extends React.Component {
                                 content
                             </div>
                         </Content>
-                        {/*<Content style={{ margin: '0 16px' }}>
-
-                            <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
-                                ...
-                                <br />
-                                Really
-                                <br />...<br />...<br />...<br />
-                                long
-                                <br />...<br />...<br />...<br />...<br />...<br />...
-                                <br />...<br />...<br />...<br />...<br />...<br />...
-                                <br />...<br />...<br />...<br />...<br />...<br />...
-                                <br />...<br />...<br />...<br />...<br />...<br />...
-                                <br />...<br />...<br />...<br />...<br />...<br />...
-                                <br />...<br />...<br />...<br />...<br />...<br />...
-                                <br />...<br />...<br />...<br />...<br />...<br />
-                                content
-                            </div>
-                        </Content>*/}
                         <Footer style={{ textAlign: 'center' }}>
                             Ant Design ©2016 Created by Ant UED
                         </Footer>
