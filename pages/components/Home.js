@@ -1,6 +1,7 @@
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
+import Todo from './Todos'
 
 export default class Home extends React.Component {
     constructor () {
@@ -57,6 +58,7 @@ export default class Home extends React.Component {
                                 <Breadcrumb.Item>Bill</Breadcrumb.Item>
                             </Breadcrumb>
                             <div style={{ padding: 24, background: '#fff', textAlign: 'center' }}>
+                                <Todo/>
                                 ...
                                 <br />
                                 Really
